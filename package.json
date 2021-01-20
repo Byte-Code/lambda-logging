@@ -1,6 +1,6 @@
 {
   "name": "@byte-code/lambda-logging",
-  "version": "1.0.1",
+  "version": "0.0.0-development",
   "description": "Serverless Logging",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
@@ -11,7 +11,8 @@
     "prepublish": "npm run build",
     "build": "tsc",
     "watch": "tsc -w",
-    "test": "jest"
+    "test": "jest",
+    "semantic-release": "semantic-release"
   },
   "author": "apalumbo",
   "license": "LGPL",
@@ -21,11 +22,12 @@
     "@types/node": "10.17.5",
     "ts-jest": "^24.1.0",
     "ts-loader": "^6.2.1",
-    "typescript": "^3.8.3"
+    "typescript": "^3.8.3",
+    "semantic-release": "^17.3.4"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/byte-code/serverless-logging.git"
+    "url": "https://github.com/byte-code/lambda-logging.git"
   },
   "jest": {
     "runner": "groups",
