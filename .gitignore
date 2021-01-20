@@ -1,0 +1,14 @@
+*.js
+!jest.config.js
+*.d.ts
+node_modules
+dist
+coverage
+
+# TS incremental build 
+*.tsbuildinfo
+
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out

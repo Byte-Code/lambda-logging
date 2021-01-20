@@ -1,0 +1,59 @@
+{
+  "name": "@byte-code/lambda-logging",
+  "version": "1.0.1",
+  "description": "Serverless Logging",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "files": [
+    "/dist"
+  ],
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest"
+  },
+  "author": "apalumbo",
+  "license": "LGPL",
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/lambda-log": "^2.2.0",
+    "@types/node": "10.17.5",
+    "ts-jest": "^24.1.0",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.8.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byte-code/serverless-logging.git"
+  },
+  "jest": {
+    "runner": "groups",
+    "verbose": true,
+    "collectCoverage": true,
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "/__tests__/.*(test|spec)\\.((t|j)sx?)$",
+    "testPathIgnorePatterns": [
+      "<rootDir>/dist/",
+      "<rootDir>/node_modules/"
+    ],
+    "moduleNameMapper": {},
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "dependencies": {
+    "lambda-log": "^2.3.1"
+  }
+}
